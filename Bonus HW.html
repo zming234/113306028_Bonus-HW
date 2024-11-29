@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>113306028_Bonus</title>
+    <style>
+        .centered-form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            max-width: 600px;
+        }
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .form-row div {
+            display: flex;
+            align-items: center;
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        .form-row div.full-width {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        textarea {
+            resize: none;
+            border-radius: 10px;
+            width: calc(100% - 80px);
+            margin-left: 5px;
+        }
+        input {
+            border-radius: 10px;
+            width: calc(100% - 80px);
+            margin-left: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+        input, textarea {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #000;
+        }
+        img {
+            width: calc(100% - 80px);
+            height: auto;
+            border: 2px solid #000;
+            margin-left: 5px;
+        }
+        .form-field {
+            height: 40px;
+            border: 2px solid #000;
+        }
+        label {
+            width: 75px;
+        }
+    </style>
+</head>
+<body>
+    <form class="centered-form">
+        <div class="form-row">
+            <div class="full-width">
+                <label for="input1">input1</label>
+                <input type="text" name="input1" id="input1" class="form-field" placeholder="input1">
+            </div>
+            <div>
+                <label for="input2">input2</label>
+                <input type="text" name="input2" id="input2" class="form-field" placeholder="input2">
+            </div>
+            <div>
+                <label for="input3">input3</label>
+                <input type="text" name="input3" id="input3" class="form-field" placeholder="input3">
+            </div>
+            <div class="full-width">
+                <label for="input4">input4</label>
+                <input type="text" name="input4" id="input4" class="form-field" placeholder="input4">
+            </div>
+            <div class="full-width">
+                <label for="textarea">textarea</label>
+                <textarea id="textarea">make it not resizable</textarea>
+            </div>
+            <div class="full-width">
+                <label for="picture1">picture1</label>
+                <img src="計概Bonus HW\彩虹馬.png" alt="picture1">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
